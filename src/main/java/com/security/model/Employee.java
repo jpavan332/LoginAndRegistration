@@ -7,6 +7,10 @@ import jakarta.persistence.Id;
 public class Employee {
 	
 	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Id
 	private Integer emp_id;
 	private String emp_name;
@@ -15,6 +19,8 @@ public class Employee {
 	
 	public Employee(Integer emp_id, String emp_name, String email, String password) {
 		super();
+		
+		System.out.println("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
 		this.emp_id = emp_id;
 		this.emp_name = emp_name;
 		this.email = email;
